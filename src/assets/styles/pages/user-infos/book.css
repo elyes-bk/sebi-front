@@ -1,0 +1,52 @@
+.book {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #fdf6e3;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.book h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4b3f72;
+}
+
+.book button {
+  background-color: #fca311;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.book button:hover {
+  background-color: #ffba3c;
+}
+
+.book div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.book img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.book img:hover {
+  transform: scale(1.05);
+}

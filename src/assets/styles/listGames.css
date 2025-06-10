@@ -1,0 +1,42 @@
+.containerGames{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-inline: 30px;
+    padding-block: 50px;
+    background-color: #390A03;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    max-width: 410px;
+}
+
+.containerGames h2{
+    max-width: 600px;
+}
+
+.games{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .containerGames{
+        max-width: none;
+        width: clamp(0px, 50vw, 800px);
+    }
+
+    .games{
+        flex-direction: row;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+   .containerGames{
+    width: 90%;
+   }
+}

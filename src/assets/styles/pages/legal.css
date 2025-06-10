@@ -1,0 +1,55 @@
+.mentions-legales {
+  padding: 40px 20px;
+  background-color: #fff8f1;
+  color: #390A03;
+}
+
+.mentions-legales .container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  border: 2px solid #ed9d67;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mentions-legales h1 {
+  text-align: center;
+  color: #ed9d67;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.mentions-legales h2 {
+  margin-top: 30px;
+  color: #390A03;
+  font-size: 1.5rem;
+}
+
+.mentions-legales p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.mentions-legales a {
+  text-decoration: underline;
+}
+
+.hebergeur a{
+  color:#ed9d67;
+}
+
+.back-home {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #ed9d67;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+

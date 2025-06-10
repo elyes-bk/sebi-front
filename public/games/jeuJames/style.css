@@ -1,0 +1,199 @@
+body{
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#block{
+    height: 100vh;
+    display: flex;
+}
+
+#jeu{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: solid black 1px;
+    height: 500px;
+    width: 500px;
+    background-color: #ffffff;
+    
+}
+
+#head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ED9D67;
+    border-bottom: solid 1px black;
+    width: 500px;
+    height: 50px;   
+    
+}
+
+#corps{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*__________________________________________________________________________________*/
+
+#blockCalcule{
+    height: 100%;
+    width: 100%;
+    border-bottom: solid 1px;
+    background-color: #e9ccb8;
+    display: flex; 
+    position: relative;
+}
+
+svg{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 40px;
+    z-index: 10;
+    background-color: red;
+    border-radius: 50%;
+}
+
+#leftBlock{
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blockCalcule #bulle{
+    background-color: #ffffff;
+    border: solid 1px black;
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+}
+
+#blockCalcule #bulleInt{
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+
+#blockCalcule #number{
+    font-size: 30px;
+    text-align: center; 
+    z-index: 4;
+}
+
+#blockCalcule #correct{
+    text-align: center; 
+    z-index: 2;
+    display: none;
+    font-size: 24px;
+}
+
+
+
+#blockCalcule #triangle{
+    position: absolute;
+    left:124px;
+    top: 81px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 100px 50px 50px;
+    border-color: transparent transparent black transparent;
+    z-index: 1;
+}
+
+#blockCalcule #triangle2{
+    position: absolute;
+    left:120px;
+    top: 80px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 100px 50px 50px;
+    border-color: transparent transparent white transparent;
+    z-index: 2;
+}
+
+#blockCalcule #response{
+    position: absolute;
+    bottom: 40px;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+#blockCalcule #faux{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    background-color: white;
+    border: solid 1px;
+    position: absolute;
+    bottom: 40px;
+}
+
+#rightBlock{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#hiboux{
+    position: absolute;
+    bottom: -4px;
+    z-index: 0;
+}
+
+/*__________________________________________________________________________________*/
+
+#btn{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-block:10px;
+}
+
+#btn #btnVal{
+    height: 50px;
+    width: 100px;
+    background-color: #ED9D67;
+    color: #390A03;
+    border-radius: 5px;
+}
+
+
+
+#chrono{
+    background-color: #390a03;
+    color: white;
+    text-align: center;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}

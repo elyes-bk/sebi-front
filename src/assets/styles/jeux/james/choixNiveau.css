@@ -1,0 +1,120 @@
+/*--------------------Style général--------------------*/
+
+#choixNiveau .landscape{
+    display: none;
+}
+
+#choixNiveau{
+    height:100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 20px;
+}
+
+
+/*mode portrait telephone*/
+#choixNiveau .portrait{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#choixNiveau .portrait p{
+    font-size: 32px;
+}
+
+.portrait img{
+    width: 50%;
+}
+
+/*paysage*/
+@media screen and (orientation: landscape) ,
+screen and (min-width:500px) {   
+    #choixNiveau .portrait{
+        display: none;
+    }
+    #choixNiveau .landscape{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;   
+    }
+}
+
+/*--------------------Paysage--------------------*/
+.sebi-bloc{
+    height: 100%;
+    display: flex;
+    align-items: end;   
+}
+
+.james-bloc {
+    height: 100%;
+    display: flex;
+    align-items: end; 
+}
+
+.james-bloc img {
+    transform: scaleX(-1);
+    min-height: 7.5rem;
+    height: 25vw;
+    max-height: 18rem;
+}
+
+
+#choixNiveau .landscape #select-game{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#select-game p{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: clamp(1rem, 3vw, 3rem);
+    background-color: rgba(255, 255, 255, 0.5); 
+    color: black
+}
+
+#choixNiveau #btnBlock{
+    display: flex;
+    gap: 20px;
+}
+
+#choixNiveau #btnBlock .btn{
+    border-radius: 10px;
+    cursor: grab;
+    padding: 10px 20px;
+    background-color: #390A03;
+    color: white;
+    width: 22vw;
+    height: 9vw;
+    max-width: 220px;
+    max-height: 80px;
+    font-size: clamp(1rem, 2.5vw, 2rem);;
+}
+
+#choixNiveau #btnBlock .btn:hover{
+    background-color: #ED9D67;
+}
+
+@media screen and (orientation: portrait){
+    #select-game p{
+        font-size: clamp(0px, 4vw, 4rem);
+    }
+
+    #choixNiveau #btnBlock .btn{
+        max-width: 320px;
+        max-height: 130px;
+    }
+
+}

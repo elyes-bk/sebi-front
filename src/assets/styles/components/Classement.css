@@ -1,0 +1,54 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.classement-popup {
+    background: white;
+    border: 2px solid #390A03;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.classement-popup h3 {
+    margin-top: 0;
+    color: #390A03;
+    font-size: 20px;
+    text-align: center;
+}
+
+.classement-popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.classement-popup li {
+    padding: 6px 0;
+    font-weight: bold;
+}
+
+.close-button {
+    position:absolute;
+    top: 8px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #390A03;
+    cursor: pointer;
+}

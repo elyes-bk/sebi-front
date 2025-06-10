@@ -1,0 +1,254 @@
+#level{
+    height: 100%;    
+}
+
+#level .landscape{
+    display: none;
+}
+
+#level .portrait {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#level .portrait .rotate{
+    height: 200px;
+    width: 200px;
+}    
+
+
+@media screen and (orientation: landscape),
+screen and (min-width:768px) {   
+    #level .portrait {
+        display: none;
+    }
+
+    #level .landscape {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+}
+
+/*barre accessoire*/
+
+.top-bar{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    z-index: 7;
+}
+
+.top-bar .score-info {
+    display: flex;
+    gap: 20px;
+    z-index: 5;
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);;
+
+}
+
+.top-bar .score-info span {
+    padding: 5px 15px;
+    background-color: rgba(237, 157, 103, 0.9);
+    border-radius: 20px;
+    border: 1px solid #390A03;
+    font-weight: bold;
+    color: #390A03;
+    width: 20vw;    
+}
+
+.top-bar .trophy {
+    width: 6vw;
+    max-width: 60px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #ED9D67;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.top-bar .cross {
+    width: 6vw;
+    max-width: 50px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/*contenu*/
+#level .landscape .level {
+    position: relative;
+    display: flex;
+    flex: 1;
+    align-items: center; 
+    justify-content: center;
+    padding-inline: 30px;
+    gap: 50px;
+}
+
+
+#level .landscape .difficile {
+    position: relative;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#level .landscape .level #leftBlock {
+    display: flex;
+    min-width: 200px;
+    height: 100%;
+    align-items: end;
+}
+
+
+#level .landscape .level #rightBlock {
+    display: flex;
+    justify-content: center;
+}
+
+
+#level .landscape .difficile #rightBlock {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+#blockResFacile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(10px,2vw,20px);
+}
+
+#blockResDifficile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#blockResDifficile #btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#blockResFacile .response {
+    border: solid black 4px;
+    border-radius: 10px;
+    background-color: white;
+    width: 8vw;
+    height: 8vw;
+    max-height: 70px;
+    max-width: 70px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);;
+
+}
+
+#blockResFacile .response.correct {
+    background-color: #4CAF50;
+    border-color: #45a049;
+    border: solid black 1px;
+
+}
+
+#blockResFacile .response.incorrect {
+    background-color: #f44336;
+    border-color: #da190b;
+    border: solid black 1px;
+}
+
+#blockResDifficile .response{
+    font-size: clamp(1rem, 2.5vw, 1.5rem);;
+    border-radius: 10px;
+    border: solid black 4px;
+    background-color: white;
+    height: 8vw;
+    max-height: 70px;
+    text-align: center;
+}
+
+#blockResDifficile .btn{
+    height: 7vw;
+    max-height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    background-color: #ED9D67;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);;
+
+}
+
+
+#chrono {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chrono::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #4CAF50 calc(var(--progress-width) * 1%),
+        #e0e0e0 calc(var(--progress-width) * 1%)
+    );
+    transition: all 1s linear;
+}
+
+#chrono span {
+    position: relative;
+    z-index: 2;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #390A03;
+    font-size: 20px;
+}
+
+#chrono.warning::before {
+    background: conic-gradient(
+        #f44336 calc(var(--progress-width) * 1%),
+        #e0e0e0 calc(var(--progress-width) * 1%)
+    );
+    animation: pulse 0.8s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}

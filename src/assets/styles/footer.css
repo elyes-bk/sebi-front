@@ -1,0 +1,37 @@
+.footer {
+    background-color: #390A03;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #4CAF50;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        gap: 30px;
+    }
+}
+
+@media screen and (orientation: landscape),
+screen and (min-width:768px) {
+    .footer{
+        display: flex;
+        flex-direction: row;
+    }
+}
+

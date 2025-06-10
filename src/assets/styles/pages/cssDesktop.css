@@ -1,0 +1,301 @@
+/*form-login.css*/
+.form-login{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.login-form {
+    background-color: #5a7f2c; /* vert fond */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 70%;
+    margin: 0 auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+
+  }
+  
+  .form-title {
+    text-align: center;
+    font-weight: bold;
+    color: #f7b27a;
+    font-size: 24px;
+    text-shadow: 1px 1px #4a1c06;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #3c2c1c;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff8ee;
+  }
+  
+  .login-button {
+    background-color: #f7b27a; /* orange clair */
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    text-shadow: 1px 1px #444;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #e89a60;
+  }
+  /*form-sign-up.css*/
+  .form-sign-up{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.sign-up-form {
+    background-color: #5a7f2c; /* vert fond */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 70%;
+    margin: 0 auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+
+  }
+  
+  .form-title {
+    text-align: center;
+    font-weight: bold;
+    color: #f7b27a;
+    font-size: 24px;
+    text-shadow: 1px 1px #4a1c06;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #3c2c1c;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff8ee;
+  }
+  
+  .login-button {
+    background-color: #f7b27a; /* orange clair */
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    text-shadow: 1px 1px #444;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #e89a60;
+  }
+  
+  /*games*/
+  .games-list{
+    height: 100%;
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+}
+
+.games-block{
+    text-align: center;
+    
+}
+
+/*home.css*/
+.home{
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.home .list-games{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*button.css*/
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5D7D20;
+    font-size: 25px;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.button{
+    color: white;
+    text-decoration: none;
+}
+
+.home-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*footer*/
+.footer{
+    background-color: #390A03;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    gap: 30px;
+}
+
+/*game*/
+.game-container {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.game-image {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.game-name {
+    margin-top: 10px;
+    font-size: 18px;
+    color:white;
+    text-align: center;
+}
+
+/*listGames*/
+.listGames{
+    display: flex;
+    align-items: center;
+}
+
+.containerGames{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #390A03;
+    border-radius: 20px;
+    color: white;
+    padding: 30px;
+    height: 500px;
+    text-align: center;
+}
+
+.games{
+    display: flex;
+    justify-content:space-around;
+}
+
+/*navBar*/
+.navbar{
+    height: 100px;
+    background-color: #390A03;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo img{
+    height: 100%;
+    margin-left: 20px;
+}
+
+.btns{
+    padding: 30px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    color: white;
+    padding: auto;
+}
+
+/*router*/
+.route{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.router-home{
+    background-image: url('../images/background-img.png');
+    width: 100%;
+    height: 100%;  /* Ajuste selon ton besoin */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+
+/*sebi*/
+.container-sebi{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 400px;
+}
+
+.bulle{
+    border: solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 200px;
+    text-align: center;
+}
+
+.sebi{
+    transform: scaleX(-1);
+}

@@ -1,0 +1,38 @@
+.game-container {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.game-image {
+    object-fit: contain;
+    border-radius: 15px;
+    overflow: hidden;
+    max-height: clamp(0px,40vw,180px);
+}
+
+.game-name {
+    margin-top: 10px;
+    font-size: 20px;
+    color:white;
+    text-align: center;
+}
+
+/*tablette et +*/
+@media screen and (min-width: 768px){
+    .game-image {
+        max-height: none;
+        height: clamp(0px, 20vw, 180px);
+    }
+}
+
+/*seulement tab et orientation paysage*/
+@media screen and (min-width: 768px) and (max-width:1024px) and (orientation:landscape){
+    .game-image {
+        max-height: none;
+        height: clamp(0px, 15vw, 200px);
+    }
+}

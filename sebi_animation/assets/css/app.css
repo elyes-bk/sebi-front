@@ -1,0 +1,25 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    border: 1px solid red;
+    width: 325px;
+    height: 375px;
+    position: relative;
+}
+
+#head {
+    position: absolute;
+    width: 300px;
+    z-index: 1;
+}
+
+#body {
+    position: absolute;
+    width: 250px;
+    top: 160px;
+    left: 75px;
+}

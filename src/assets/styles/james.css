@@ -1,0 +1,68 @@
+.james{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+
+}
+
+.james img{
+    transform: scaleX(-1);
+    width: auto;
+  	height: 20vw;
+}
+
+/*reponse dans la bulle*/
+#correct {
+    z-index: 4;
+}
+
+.james p.bubble {
+  position: relative;
+  max-width: 300px;
+  text-align: center;
+  line-height: 1.4em;
+  background-color: #fff;
+  border: 4px solid #333;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);;
+}
+
+.james p.bubble:before,
+.james p.bubble:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.james p.speech:before {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -38px;
+  border: 18px solid;
+  border-color: #333 transparent transparent #333;
+}
+
+.james p.speech:after {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+  border: 15px solid;
+  border-color: #fff transparent transparent #fff;
+}
+
+@media screen and (min-width:768px) and (orientation: portrait) {
+	.james img{
+		height: 45vw;
+	}
+}
+
+@media screen and (min-width:959px) and (orientation: landscape) {
+	.james img{
+		height: 25vw;
+	}
+}

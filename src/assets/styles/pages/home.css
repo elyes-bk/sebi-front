@@ -1,0 +1,14 @@
+
+/*telephone*/
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*desktop*/
+@media screen and (min-width: 1024px){
+    .home{
+        flex-direction: row;
+    }
+}
